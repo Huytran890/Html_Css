@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.carousel-inner {
+  max-height: 400px;
+}
+
+.block-table {
+  width: 100%;
+  height: 100%;
+  background: #ddd;
+}
+
+.block-product {
+  background: #ddd;
+  height: 400px;
+}
+
+/* .custom {
+  display: flex;
+  column-gap: 10px;
+} */

@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px;
+}
+.flex {
+  display: flex;
+}
+.recommend {
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+
+.recommend .recommend-list {
+  width: calc((100% - 30px) / 4);
+  max-width: 420px;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.recommend-list img {
+  width: 100%;
+  height: 250px;
+  padding: 10px;
+}
+
+.recommend-list p {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.recommend-list .price {
+  justify-content: center;
+  align-items: center;
+}
+
+.price span {
+  text-decoration: line-through;
+  color: #7c8288;
+}
+
+.price p {
+  color: #D21425;
+}

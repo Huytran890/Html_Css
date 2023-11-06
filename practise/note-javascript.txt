@@ -1,0 +1,61 @@
+String
+
+Array: 
++ Array.length: Trả về số phần tử trong mảng
++ Array.toString(): convert mảng thành chuổi
++ Array.push(): Thêm phần tử vào cuối mảng
++ Array.pop(): Xóa phần tử cuối mảng
++ Array.shift(): Xóa phần tử đầu mảng
++ Array.unshift(): Thêm 1 hoặc nhiều phần tử đầu mảng
+
++ Array.splice(position, numberOfElementToRemov, define E to add):
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+	- Thêm phần tử fruits.splice(2, 0, "Apple", "Mango")
+	- Xóa phần tử fruits.splice(2, 1);
+
+
++ Array slice(): cắt từ phần tử chỉ định sang 1 mảng mới
+const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+const citrus = fruits.slice(1, 3); -> start -> end - 1
+
+Array Iteration: 
++ Array.forEach(): duyệt mảng cũ và ko thể thao tác tính toán (ko trả về mảng mới)
+
++ Array.map(): duyệt mảng và có thể thao tác trả về mảng mới
+
++ Array.filter(): Tạo một mảng mới với các phần tử pass 1 điều kiện chỉ định
+const numbers = [45, 4, 9, 16, 25]
+numbers.filter((value) => value > 18)
+
++ Array.reduce(): duyệt mảng để xử lý 1 logic nào đó và trả về 1 giá trị duy nhất
+const numbers = [45, 4, 9, 16, 25];
+numbers.reduce(total, value, 100) => 100 là giá trị khởi tạo ban đầu cho total in reduce
+
++ Array.every(): kiểm tra tất cả element pass điều kiện chỉ định trả về (true/false)
+
++ Array.some(): kiểm tra xem có ít nhất một phần tử trong mảng thỏa mãn một điều kiện chỉ định trả về (true/false)
+const numbers = [1, 2, 3, 4, 5];
+const hasEven = numbers.some((element) => element % 2 === 0); -> true
+
++ Array.indexOf(): Tìm từ khóa trả về index của nó lần đầu tiên xuất hiện
+const fruits = ["Apple", "Orange", "Apple", "Mango"];
+let position = fruits.indexOf("Apple"); -> 0
+
++ Array.lastIndexOf(): Tìm từ khóa trả về index của nó lần cuối cùng xuất hiện
+const fruits = ["Apple", "Orange", "Apple", "Mango"];
+let position = fruits.indexOf("Apple"); -> 2
+
++ Array.includes(): kiểm tra xem một phần tử có xuất hiện trong một mảng hay không trả về (true/false)
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.includes("Mango"); -> true
+
++ Array.find(): trả về 1 phần tử đầu tiên pass cái điều kiện chỉ định
+const numbers = [4, 9, 16, 25, 29];
+const result = numbers.find((number) => number > 18); -> 25
+
++ Array.findIndex(): trả về index của phần tử đầu tiên pass điều kiện chỉ định
+const numbers = [4, 9, 16, 25, 29];
+const result = numbers.findIndex((index) => index > 18); -> 3
+
++ 
+

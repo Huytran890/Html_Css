@@ -1,0 +1,19 @@
+
+
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+
+  /* transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s; */
+  /* shorthand */
+  transition: width 2s linear 1s;
+}
+
+/* rê chuột lên thẻ div sẽ thay đổi chiều rộng lên 300px */
+div:hover {
+  width: 300px;
+}

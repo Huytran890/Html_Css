@@ -1,0 +1,135 @@
+/* Class (.button) là một selector (cái được chọn) */
+/* thuộc tính của selector là property và value là cái thể hiện của property*/
+* {
+  color: brown;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+}
+.button {
+  background: #411ca9;
+  color: #fff;
+  width: 100px;
+  text-align: center;
+  border-radius: 30px;
+  text-transform: uppercase; /* Đổi cách hiển thị chữ */
+  padding: 10px 20px;
+}
+
+/* Đơn vị đo độ dài: px, % */
+
+#price {
+  display: inline-block;
+  background: #e62163;
+  color: #fff;
+  border-radius: 20px;
+  padding: 6px 12px;
+}
+
+/* Type Selector: là cặp thẻ của html (tag name selector) */
+p {
+  color: red;
+}
+/* class Selector: là cặp thẻ của html (tag name selector) */
+/* ví dụ như thẻ class .button ở trên */
+
+/* Type Selector: là cặp thẻ của html (tag name selector) */
+/* ví dụ như thẻ id .button ở trên */
+
+/* universal Selector: là cặp thẻ của html (tag name selector) */
+/*  là * {bao gồm những cái default cho tất cả các thẻ} */
+
+/* ĐỘ ưu tiên: inline > internal > external */
+/* ĐỘ ưu tiên chi tiết: inline > id > class > tag > universal */
+
+
+/* Peseudo class */
+.hover {
+    color: #333;
+    text-decoration: none;
+    font-size: 26px;
+    margin-top: 10px;
+}
+/* hover */
+.hover:hover {
+    color: red;
+}
+
+/* active: click vào và chưa nhã chuột ra */
+.hover:active {
+    color: violet;
+}
+
+/* visited: đã thực hiện nó rồi kiểu như nhấn hay gì đó */
+/* .hover:visited {
+    color: blue;
+} */
+
+.first::first-letter {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* ul li:first-child {
+    color: chartreuse;
+}
+
+ul li:last-child {
+    color: darkorange;
+}
+
+ul li:nth-child(2) {
+    color: cadetblue;
+} */
+
+ul li:nth-child(2n + 2) {
+    color: chartreuse;
+}
+
+ul li:nth-child(2n + 1) {
+    color: darkorange;
+}
+
+ul li {
+    /* position: relative; */
+    list-style: none;
+}
+
+/* ul li::before {
+    content: '*';
+    position: absolute;
+    left: -25%;
+    top: 20%;
+    margin-right: 5px;
+} */
+
+.nav li {
+    display: inline-block;
+    list-style: none;
+}
+
+/* cách 1 */
+/* .nav li::after {
+    content: '|';
+    margin: 0 5px;
+}
+
+.nav li:last-child::after {
+    content: '';
+} */
+
+/* cách 2 */
+ .nav li::after {
+    content: '';
+    height: 10px;
+    border-right: 2px solid #555;
+    margin: 0 5px;
+}
+
+.nav li:last-child::after {
+    border: none;
+}

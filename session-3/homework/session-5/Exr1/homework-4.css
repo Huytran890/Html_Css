@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 20px auto;
+  gap: 15px;
+}
+
+.container p {
+  font-weight: lighter;
+}
+
+.introduction {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.introduction img:first-child {
+  width: 30px;
+  height: auto;
+}
+
+.introduction img:last-child {
+  width: 20px;
+  height: auto;
+}
+
+.introduction h2 {
+  text-transform: uppercase;
+}

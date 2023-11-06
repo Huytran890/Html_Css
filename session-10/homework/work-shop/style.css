@@ -1,0 +1,13 @@
+.btn {
+  padding: 6px 14px;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 10px;
+  background: #0b74e5;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}

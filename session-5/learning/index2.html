@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- form  -->
+    <form action="">
+      <div class="input-row">
+        <label for="name">Họ và tên: </label>
+        <input minlength="4" maxlength="255" type="text" id="name" autofocus/>
+      </div>
+      <div class="input-row">
+        <label for="dateOfBirth">Ngày sinh: </label>
+        <input type="date" id="dateOfBirth" required/>
+      </div>
+      <div class="input-row">
+        <label for="age">Tuổi: </label>
+        <input min='18' max='100' type="number" id="age" />
+      </div>
+      <div class="input-row">
+        <label for="gender">Giới tính: </label>
+        <label><input type="radio" name="gender" value="male" checked/> Male</label>
+        <label
+          ><input type="radio" name="gender" value="female" /> Female</label
+        >
+        <label
+          ><input type="radio" name="gender" value="others" /> Others</label
+        >
+      </div>
+
+      <div class="input-row">
+        <label for="interest">Sở thích: </label>
+        <label
+          ><input type="checkbox" name="interest" value="Bóng đá" /> Bóng
+          đá</label
+        >
+        <label
+          ><input type="checkbox" name="interest" value="Bóng rổ" /> Bóng
+          rổ</label
+        >
+        <label
+          ><input type="checkbox" name="interest" value="Bóng chuyền" /> Bóng
+          chuyền</label
+        >
+        <label
+          ><input type="checkbox" name="interest" value="Bóng bàn" /> Bóng
+          bàn</label
+        >
+      </div>
+      <div class="input-row">
+        <label for="email">Email: </label>
+        <input type="email" id="email" autocomplete="off"/>
+      </div>
+      <div class="input-row">
+        <label for="phone">Telephone: </label>
+        <input placeholder="+84905123456" type="tel" id="phone" />
+      </div>
+      <div class="input-row">
+        <label for="passwork">Passwork: </label>
+        <input type="password" id="passwork" />
+      </div>
+      <div class="input-row">
+        <label for="city">City: </label>
+        <select id="city">
+          <option value="0">--Vui lòng chọn tỉnh / thành phố--</option>
+          <option value="1" selected>Đà Nẵng</option>
+          <option value="2">HCM city</option>
+          <option value="3">Hà Nội</option>
+        </select>
+      </div>
+      <div class="input-row">
+        <label for="avatar">Avatar: </label>
+        <input type="file" id="avatar" />
+      </div>
+      <div>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 10px auto;
+  gap: 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    width: 300px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+}
+
+ul li::before {
+    content: "➤";
+    margin-right: 5px;
+}

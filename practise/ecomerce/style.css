@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+:root {
+  --grey-bg: #f5f3f0;
+  --white-bg: #fff;
+  --text-hover: ##cb7152;
+  --text: #333;
+  --text-light: #646362;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.4;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.flex {
+  display: flex;
+}
+
+.nav-wrapper {
+  width: 100%;
+  height: 70px;
+  align-items: center;
+  background: red;
+  font-size: 1.6rem;
+}
+
+.logo {
+  width: auto;
+  height: auto;
+}
+
+.logo a {
+  position: relative;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.logo small {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  font-size: 1.4rem;
+  transform: translate(0, -40%);
+}
+
+.menu-nav {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-menu-nav {
+  flex: 2;
+  display: block;
+  padding-left: 10px;
+  text-align: center;
+}
+
+.main-menu-nav ul {
+  gap: 10px;
+  text-align: center;
+}
+
+.nav-func {
+  flex: 1;
+}

@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 20px auto;
+  gap: 15px;
+}
+
+.container h2:nth-child(2) {
+  text-transform: uppercase;
+}
+
+.container p {
+  text-indent: 40px;
+  text-align: justify;
+}

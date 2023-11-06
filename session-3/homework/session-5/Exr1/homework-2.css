@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: block;
+  width: 500px;
+  margin: 10px auto;
+}
+
+.container img,
+.container p,
+.container h2,
+.container ul {
+  float: left;
+  text-align: left;
+}
+
+.container ul {
+  padding: 10px 15px;
+}
+
+.container p {
+  padding: 10px 0;
+}
+
+.text-bg {
+  width: 100%;
+  background: #f5f5f5;
+  text-indent: 10px;
+}

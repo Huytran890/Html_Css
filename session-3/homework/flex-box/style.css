@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.resum_wrapper {
+  display: flex;
+  margin: 0 100px;
+}
+
+.user_profiles {
+    width: 200px;
+    background-color: #222;
+}
+
+.info_extra {
+    width: calc(100% - 200px);
+}
+
+.skill_name {}
+

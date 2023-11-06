@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+}
+form {
+    margin-top: 30px;
+}
+
+form label {
+  min-width: 120px;
+}
+
+form .input-row {
+  display: flex;
+  margin-bottom: 10px;
+}
