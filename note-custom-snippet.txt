@@ -1,0 +1,128 @@
+{
+  // Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+  // Placeholders with the same ids are connected.
+  // Example:
+  "Custom to console": {
+    "scope": "javascript,typescript,javascriptreact, typescriptreact",
+    "prefix": "zz",
+    "body": ["console.log('<<== 🚀 $0 ==>>', $0);"],
+    "description": "Log output to console"
+  },
+  "text log": {
+    "prefix": "xx",
+    "body": ["console.log('«««« 🔥 $0 »»»»');"],
+    "description": "tlog"
+  },
+  "variable log": {
+    "prefix": "ll",
+    "body": ["console.log(`📌📌📌: ${$0} ❗`);"],
+    "description": "llog"
+  },
+  "debb": {
+    "prefix": "debb",
+    "body": ["// eslint-disable-next-line no-debugger", "debugger;"],
+    "description": "deb"
+  },
+  "useState": {
+    "prefix": "us",
+    "body": [
+      "const [$1, set$2] = useState($3);"
+    ]
+  },
+  "useMemo": {
+    "prefix": "umm",
+    "body": [
+      "const $1 = useMemo(() => {",
+      "  $2",
+      "}, [$3]);"
+    ]
+  },
+  "useCallback": {
+    "prefix": "ucb",
+    "body": [
+      "const $1 = useCallback(() => {",
+      "  $2",
+      "}, [$3]);"
+    ]
+  },
+  "useEffect": {
+    "prefix": "ue",
+    "body": [
+      "useEffect(() => {",
+      "  $1",
+      "}, [$2]);"
+    ]
+  },
+  "Cleanup func": {
+    "prefix": "cuf",
+    "body": [
+      "useEffect(() => {", 
+      "  $1",
+      "return () => {", "  $2", "}", 
+      "}, [$3])"
+    ],
+    "description": "Cleanup func"
+  },
+  "useRef": {
+    "prefix": "ur",
+    "body": [
+      "const $1Ref = useRef($2);"
+    ]
+  },
+  "IFFE": {
+    "prefix": "iffy",
+    "body": ["(function () {}) ();", "(function () {} ());", "(() => {}) ();"],
+    "description": "iffy func"
+  },
+  "PropTypes": {
+    "prefix": "ptm",
+    "body": [
+      "import PropTypes from 'prop-types';",
+
+      "$0.propTypes = {",
+
+      "};",
+
+      "$0.defaultProps = {",
+
+      "};"
+    ],
+    "description": "Cleanup func"
+  },
+  "check": {
+    "prefix": "check",
+    "body": [
+      "console.log('███╗░░██╗░█████╗░███╗░░██╗');",
+      "console.log('████╗░██║██╔══██╗████╗░██║');",
+      "console.log('██╔██╗██║██║░░██║██╔██╗██║');",
+      "console.log('██║╚████║██║░░██║██║╚████║');",
+      "console.log('██║░╚███║╚█████╔╝██║░╚███║');",
+      "console.log('╚═╝░░╚══╝░╚════╝░╚═╝░░╚══');"
+    ],
+    "description": "clog"
+  },
+  "ccp": {
+    "prefix": "ccp",
+    "body": [
+      "import React from 'react';",
+      "",
+      "type PropTypes {",
+      "\t",
+      "}",
+      "const $0 = (props: PropTypes) => {",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\tComponent",
+      "\t\t</div>",
+      "\t);",
+      "}",
+      "",
+      "export default $0;"
+    ],
+    "description": "Create function component"
+  }
+}

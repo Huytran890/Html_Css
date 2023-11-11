@@ -1,0 +1,56 @@
+1. Auto Import
+2. Auto Rename Tag
+3. Babel Javascript
+4. Better comments
+5. Bookmarks
+6. Code spell checker
+7. color highlight
+8. color infor
+9. css peek
+10. Custom CSS and JS Loader
+11. docker
+12. Dotenv
+13. ES7+ React/Redux/React-Native snippets
+14. ESlint
+15. Evondev - Indent Rainbow Palettes
+16. Evondev Dracula
+17. Evondev snippets
+18. Fix VSCode Checksums
+19. git History
+20. GitLens — Git supercharged
+21. GraphQL: Syntax Highlighting
+22. Highlight Matching Tag
+23. HTML CSS Support
+24. HTML to CSS autocompletion
+25. Image preview
+26. indent-rainbow
+27. intelllicode (microsoft)
+28. IntelliCode API Usage Examples (microsoft)
+29. JavaScript (ES6) code snippets
+30. Live Server
+31. Material Icon Theme
+32. Multiple cursor case preserve
+33. Nextjs snippets
+34. npm Intellisense
+35. path intellisense
+36. power mode
+37. prettier
+38. Pretty TypeScript Errors
+39. Prisma
+40. Reactjs code snippets
+41. Tabnine: AI Autocomplete & Chat for Javascript
+42. Tailwind CSS IntelliSense
+43. Tailwind Documentation
+44. Tailwind Twin IntelliSense
+45. Template String Converter
+46. Typescript React code snippets
+47. vscode-styled-components
+48. WSL
+
+
+
+
+
+
+
+
