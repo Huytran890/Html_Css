@@ -1,0 +1,59 @@
+Tạo file touch <name_file>
+git là một version control
+1. Khởi tạo git local (folder .git): git init
+2. Xem sự thay đổi trạng thái của Repository: git status
+3. Luồng làm việc
+	+ Working directory --> Staging area --> repository
+I. Working directory: là code của mình
+II. Staging area: là bước trung gian (cầm code của mình bỏ vào staging để review thay đổi 
+chuẩn bị commit) --> sử dụng git add . (để lưu Working directory vào Staging).
+III. Repository: Quản lý bởi git để lưu lại lịch sử thực hiện 
+--> sử dụng git commit -m"commit_messages" (để lưu Staging vào Repository)
+* Lưu ý: có thể kết hợp giữa add và commit --> sử dụng git commit -am "message"
+
+4. Để chỉnh sửa lại file commit cũ (bao gồm nội dung và message commit) 
+--> sử dụng git commit --amend -m "message"
+
+5. Kết nối Remote và Local: sử dụng git remote add origin "URL_GIT"
+6. Đẩy từ Local lên Remote: sử dụng git push -u orgigin master
+
+7. Show ra lịch sử của nhánh hiện tại: Sử dụng git log
+* Làm git log đẹp hơn khi dự án lớn: Sử dụng git log --graph --decorate --online 
+
+8. Xem branch: git branch, Tạo mới branch: git branch Name_Branch, 
+Xóa branch: git branch -d name_branch
+* Tạo nhánh mới từ 1 nhánh xác định: git branch New_Branch Name_Branch (branch xác định)
+
+9. Chuyển nhánh: git checkout Name_Branch
+* Tạo nhánh mới và chuyển nhánh qa luôn: git checkout -b Name_Branch
+
+10. git merge name_branch --no-ff
+(tên branch sẽ bị merge lưu ý phải đứng từ branch cần merge vào nghĩa là final branch)
+
+11. Muốn thay đổi nguồn gốc của 1 branch sang 1 branch khác (merge kiểu đẹp hơn) thì sẽ dùng rebase 
+(nó sẽ thay đổi nguồn gốc chứ không phải là giống merge) --> git rebase 
+* Để bợ branch muồn rebase và đi kèm theo những branch đã merge vào nó thì dùng là 
+--> git rebase name_branch (muốn bợ qua branch đó) --preserve-merges
+
+12. Sử dụng nếu như branch nào đó chưa commit nhưng mình mún dùng nó thì 
+nó sẽ tách ra 1 branch ảo để mình thao tác: sử dụng git cherry-pick name_branch
+
+Advance: 
+1. Tạo alias để thực hiện 1 hay nhìu lệnh commit 
+Tạo alias: git config --global alias.huy(custom) '!git add -A && git commit -m'
+--> Sử dung: git huy "message"
+
+2. Nếu như lỡ code nhầm branch và muốn reset lại ban đầu và cx không muốn code lại từ đầu 
+thì thực hiện bơ code đã code qua bên nhánh mới.
+
+Bước 1: reset lại branch từ commit trước đó --> git reset --soft HEAD~1
+Bước 2: bỏ code thay đổi vào stash --> git stash
+Bước 3: Xóa bỏ code đã lỡ ghi ở nhánh không mong muốn --> git reset --hard HEAD~1
+Bước 4: Chuyển sang nhánh làm việc --> git checkout name_branch 
+Bước 5: Apply stash vào nhánh làm việc --> git stash apply
+
+
+
+
+
+
