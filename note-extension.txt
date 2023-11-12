@@ -1,3 +1,4 @@
+VSCODE extension:
 1. Auto Import
 2. Auto Rename Tag
 3. Babel Javascript
@@ -47,6 +48,15 @@
 47. vscode-styled-components
 48. WSL
 
+Browser extension: 
+1. ColorZilla
+2. daily.dev
+3. Dimensions
+4. Grammarly
+5. JSON Viewer
+6. React Developer Tools
+7. VisBug
+8. Google Tài liệu ngoại tuyến
 
 
 
