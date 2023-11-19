@@ -1,0 +1,245 @@
+$color_1: white;
+$color_2: #2f5acf;
+$color_3: #fff;
+$color_4: #0009;
+$color_5: #c4c4c4;
+$color_6: #242424;
+$color_7: red;
+$color_8: #000000;
+$background-color_1: rgba(39, 37, 39, 0.68);
+$background-color_2: #2f5acf;
+$background-color_3: #009739;
+
+/* .color__item {
+  display: inline-block;
+  width: 35px;
+  height: 20px;
+  background-color: red;
+  border-radius: 15px;
+  border: 3px solid #fff;
+  border-width
+  border-style
+  border-color
+  border: none
+  outline
+}
+
+.color__item:hover {
+  outline: 1px solid gray;
+} */
+/* .color__item:hover {
+  outline: 1px solid gray;
+} */
+:root {
+	--flex--item--number: 4;
+	--flex--item--padding--default: 8px;
+}
+
+.card {
+	max-width: calc((100% / var(--flex--item--number)) - (var(--flex--item--padding--default) * 2));
+	padding: var(--flex--item--padding--default);
+}
+.card__top {
+	position: relative;
+}
+.top__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: calc(100% - 20px);
+	margin: auto;
+	position: absolute;
+	top: 16px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+.header__play {
+	display: inline-flex;
+	width: 21px;
+	height: 21px;
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+	padding-left: 2px;
+	background-color: $background-color_1;
+	>i {
+		color: $color_1;
+		font-size: 12px;
+	}
+}
+.header__couter {
+	font-weight: 500;
+	font-size: 1.4rem;
+	line-height: 1em;
+	letter-spacing: 0.03em;
+	color: $color_2;
+}
+.header__tag {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1rem;
+	height: 22px;
+	padding: 0 10px;
+	border-radius: 5px;
+	font-weight: 500;
+	text-transform: capitalize;
+	color: $color_3;
+}
+.header__tag--green {
+	background-color: $background-color_2;
+}
+.header__tag--blue {
+	background-color: $background-color_3;
+}
+.image__block {
+	position: relative;
+	width: 100%;
+	aspect-ratio: 3/4;
+	border-radius: 10px;
+	overflow: hidden;
+	&:hover {
+		>.block__size {
+			visibility: visible;
+		}
+	}
+}
+.block__image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: all 0.4s ease-in-out;
+	&:nth-child(2) {
+		opacity: 0;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+}
+.zoom {
+	&:hover {
+		>.block__image {
+			&:first-child {
+				transform: scale(2);
+			}
+		}
+	}
+}
+.change {
+	&:hover {
+		>.block__image {
+			&:nth-child(2) {
+				opacity: 1;
+			}
+		}
+	}
+}
+.block__size {
+	position: absolute;
+	bottom: 20px;
+	margin: 0 16px;
+	border-radius: 10px;
+	padding: 15px 10px 10px;
+	backdrop-filter: blur(50px);
+	visibility: hidden;
+}
+.size__title {
+	font-weight: 700;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+.size__list {
+	display: flex;
+	gap: 4px;
+	flex-wrap: wrap;
+}
+.size__item {
+	width: 40px;
+	height: 35px;
+	border-radius: 8px;
+	font-size: 70%;
+	font-weight: bold;
+	&:hover {
+		background: black;
+		color: $color_1;
+	}
+}
+.card__body {
+	margin-top: 20px;
+	font-size: 14px;
+}
+.body__colors {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+	margin-top: 6px;
+}
+.color__item {
+	display: inline-block;
+	width: 35px;
+	height: 20px;
+	background-color: $background-color_2;
+	border-radius: 15px;
+	border: 1px solid black;
+	position: relative;
+	&:hover {
+		&::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			display: inline-block;
+			width: 41px;
+			height: 26px;
+			border-radius: 15px;
+			border: 1.5px solid gray;
+		}
+	}
+}
+.card__product-name {
+	font-size: 14px;
+	line-height: 1.2em;
+	font-weight: 400;
+	margin-top: 6px;
+}
+.card__product-color {
+	font-size: 14px;
+	color: $color_4;
+	margin-top: 6px;
+}
+.card__product-price {
+	margin-top: 6px;
+	font-size: 14px;
+}
+.price__discounted {
+	text-decoration: none;
+	color: $color_5;
+	font-weight: 700;
+}
+.price__price {
+	text-decoration: none;
+	color: $color_6;
+	font-weight: 700;
+}
+.price__discount {
+	color: $color_7;
+	margin-left: 10px;
+}
+.card__product-note--hightlight {
+	color: $color_2;
+	font-style: italic;
+	font-size: 1.2rem;
+	margin-top: 6px;
+}
+.card__product-note {
+	display: block;
+	font-size: 1.2rem;
+	line-height: 1.5em;
+	font-style: italic;
+	letter-spacing: .03em;
+	color: $color_8;
+	opacity: 0.3;
+	margin-top: 6px;
+}

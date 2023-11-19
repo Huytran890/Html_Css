@@ -1,0 +1,42 @@
+//! Note @extend (dùng với %) và @mixin (dùng với @include) tương tự nhau nhưng khi compile qua css thì extend sẽ ngắn gọn và đẹp hơn (tức là mixin sẽ copy y css còn extend sẽ tách ra đẹp hơn)
+//! Sự khác biệt tiếp theo là @mixin có thể truyền biến (dynamic) còn extend thì không
+//! còn @function thì như @mixin nhưng nó sẽ thực hiện tính toán và trả về được
+
+@mixin media-lg {
+	@media only screen and (max-width: 992px) {
+		@content;
+	}
+}
+
+@mixin media-md {
+	@media only screen and (max-width: 768px) {
+		@content;
+	}
+}
+
+@include media-lg {
+	.card {
+		width: calc((100% / 2) - 30px) !important;
+	}
+
+	html {
+		font-size: 13px;
+	}
+}
+
+@include media-md {
+	.card {
+		width: calc((100% / 1) - 30px) !important;
+		max-width: 400px !important;
+		margin: auto !important;
+		margin-bottom: 20px !important;
+	}
+
+	.card:last-child {
+		margin-bottom: 0;
+	}
+
+	html {
+		font-size: 10px;
+	}
+}

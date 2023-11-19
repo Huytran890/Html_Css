@@ -1,0 +1,47 @@
+:root {
+  --text-color: #222222;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+}
+
+.menu > li {
+  padding-right: 20px;
+}
+
+.menu > li > a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.header__search {
+  width: 182px;
+  height: 32px;
+  margin-right: 12px;
+  background: rgba(0, 0, 0, .08);
+  /* border: none; */
+  border-width: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: rgba(136, 136, 136, 1);
+}
+
+.header__btn {
+  padding: 5px 10px;
+}
+
+.btn--login {
+  margin-right: 12px;
+}

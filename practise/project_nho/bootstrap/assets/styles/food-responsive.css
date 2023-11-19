@@ -1,0 +1,22 @@
+@media only screen and (max-width: 992px) {
+  .card {
+    width: calc(50% - 30px) !important;
+  }
+  html {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .card {
+    width: calc(100% - 30px) !important;
+    max-width: 400px !important;
+    margin: auto !important;
+    margin-bottom: 20px !important;
+  }
+  .card:last-child {
+    margin-bottom: 0;
+  }
+  html {
+    font-size: 10px;
+  }
+}/*# sourceMappingURL=food-responsive.css.map */

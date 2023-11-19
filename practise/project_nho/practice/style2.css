@@ -1,0 +1,141 @@
+:root {
+  --gap: 30px;
+  --number: 1;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  margin-top: 40px;
+}
+
+.wrapper {
+  max-width: 1320px;
+  margin: auto;
+}
+
+#category .title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 84px;
+}
+#category .title__content {
+  color: #101010;
+  font-family: Inter;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 117.647% */
+  letter-spacing: -0.34px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#category .title__icon {
+  width: 28px;
+  height: 28px;
+}
+#category .categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+#category .category {
+  min-width: 270px;
+  /* flex-grow: 1; */
+  border-radius: 24px;
+  background: #F6F6F6;
+  position: relative;
+  padding: 20px 30px;
+}
+#category .category__name {
+  color: #171717;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 100% */
+  letter-spacing: -0.24px;
+  margin-bottom: 16px;
+}
+#category .category__description {
+  color: #969696;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px; /* 138.889% */
+}
+#category .category__price {
+  color: #FF4415;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px;
+}
+#category .category__image {
+  position: absolute;
+  bottom: 32px;
+  right: 24px;
+  width: 120px;
+  height: 120px;
+}
+
+@media (max-width: 576px) {
+  .wrapper {
+    max-width: 100%;
+  }
+  #category .category {
+    width: calc((100% - var(--gap) * (var(--number) - 1)) / var(--number));
+  }
+}
+@media (min-width: 576px) {
+  .wrapper {
+    max-width: 540px;
+  }
+  #category .category {
+    width: calc((100% - var(--gap) * (var(--number) - 1)) / var(--number));
+  }
+}
+@media (min-width: 768px) {
+  .wrapper {
+    max-width: 720px;
+  }
+  :root {
+    --number: 2;
+  }
+}
+@media (min-width: 992px) {
+  .wrapper {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .wrapper {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .wrapper {
+    max-width: 1320px;
+  }
+  :root {
+    --number: 4;
+  }
+}
+@media (min-width: 1920px) {
+  .wrapper {
+    max-width: 1800px;
+  }
+  :root {
+    --number: 5;
+  }
+}/*# sourceMappingURL=style2.css.map */

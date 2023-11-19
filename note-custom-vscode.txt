@@ -43,138 +43,139 @@
 		"editorCursor.foreground": "#9a86fd"
 	},
 	// dracula color customization
-	"editor.tokenColorCustomizations": {
-		"[Evondev Dracula Normal Contrast]": {
-			"textMateRules": [
-				{
-					"scope": [
-						"entity.other.attribute-name",
-						"entity.name.function",
-						"support.function",
-						"support.function.css",
-						"support.function.transform.css",
-						"support.type.media-names.css",
-						"support.type.property-names.css",
-						"entity.other.attribute-name.jsx",
-						"entity.other.attribute-name.tsx",
-						"entity.other.attribute-name.html",
-						"variable.other.class.js"
-					],
-					"settings": {
-						"foreground": "#20e3b2",
-						"fontStyle": "italic"
-					}
-				},
-				{
-					"scope": [
-						"variable.other.property.js",
-						"variable.other.property.static.js",
-						"JSXNested",
-						"variable.other.readwrite.js",
-						"punctuation.semi-colon",
-						"punctuation.colon",
-						"punctuation.definition.tag"
-					],
-					"settings": {
-						"foreground": "#fff"
-					}
-				},
-				{
-					"scope": [
-						"variable.graphql",
-						"string",
-						"punctuation.definition.string.begin",
-						"punctuation.definition.string.end",
-						"meta.attribute-selector.scss",
-						"meta.attribute-selector.css"
-					],
-					"settings": {
-						"foreground": "#EAC394"
-					}
-				},
-				{
-					"scope": [
-						"keyword",
-						"storage",
-						"constant.length.units.css",
-						"source.inside-js.css.styled",
-						"keyword.other.unit.percentage.css",
-						"keyword.other.unit.px.css",
-						"keyword.other.unit.rem.css",
-						"constant.length.units.css",
-						"constant.percentage.units.css",
-						"constant.time.units.css",
-						"constant.angle.units.css",
-						"constant.numeric.css",
-						"punctuation.definition.keyword",
-						"entity.name.tag"
-					],
-					"settings": {
-						"foreground": "#ff6bcb"
-					}
-				},
-				{
-					"scope": [
-						"variable.parameter",
-						"variable.other.constant",
-						"support.variable",
-						"constant",
-						"support.type.property-name.media.css",
-						"meta.property-values.css",
-						"support.constant"
-					],
-					"settings": {
-						"foreground": "#9a86fd",
-						"fontStyle": ""
-					}
-				},
-				{
-					"scope": ["support.class.component"],
-					"settings": {
-						"fontStyle": ""
-					}
-				},
-				{
-					"scope": ["variable.other.constant.object.js"],
-					"settings": {
-						"foreground": "#bd93f9"
-					}
-				},
-				{
-					"scope": ["entity.name.type.parameter"],
-					"settings": {
-						"foreground": "#ffb86c"
-					}
-				},
-				{
-					"scope": [
-						"support",
-						"entity.name.type",
-						"meta.interface.ts",
-						"entity.other.inherited-class"
-					],
-					"settings": {
-						"foreground": "#2cccff"
-					}
-				},
-				{
-					"scope": [
-						"variable.other.readwrite.js",
-						"entity.name.type.class",
-						"variable.other.property.js",
-						"variable.scss",
-						"storage.modifier.ts",
-						"variable.other.property.static.js"
-					],
-					"settings": {
-						"foreground": "#82AAFF"
-					}
-				}
-			]
-		}
-	},
-	"vscode_custom_css.imports": ["file:///E:/extension/vscode/color.css"],
-	"editor.fontFamily": "SF Mono, Operator Mono, Inconsolata, Arial, Helvetica, sans-serif",
+	// "editor.tokenColorCustomizations": {
+	// 	"[Evondev Dracula Normal Contrast]": {
+	// 		"textMateRules": [
+	// 			{
+	// 				"scope": [
+	// 					"entity.other.attribute-name",
+	// 					"entity.name.function",
+	// 					"support.function",
+	// 					"support.function.css",
+	// 					"support.function.transform.css",
+	// 					"support.type.media-names.css",
+	// 					"support.type.property-names.css",
+	// 					"entity.other.attribute-name.jsx",
+	// 					"entity.other.attribute-name.tsx",
+	// 					"entity.other.attribute-name.html",
+	// 					"variable.other.class.js"
+	// 				],
+	// 				"settings": {
+	// 					"foreground": "#20e3b2",
+	// 					"fontStyle": "italic"
+	// 				}
+	// 			},
+	// 			{
+	// 				"scope": [
+	// 					"variable.other.property.js",
+	// 					"variable.other.property.static.js",
+	// 					"JSXNested",
+	// 					"variable.other.readwrite.js",
+	// 					"punctuation.semi-colon",
+	// 					"punctuation.colon",
+	// 					"punctuation.definition.tag"
+	// 				],
+	// 				"settings": {
+	// 					"foreground": "#fff"
+	// 				}
+	// 			},
+	// 			{
+	// 				"scope": [
+	// 					"variable.graphql",
+	// 					"string",
+	// 					"punctuation.definition.string.begin",
+	// 					"punctuation.definition.string.end",
+	// 					"meta.attribute-selector.scss",
+	// 					"meta.attribute-selector.css"
+	// 				],
+	// 				"settings": {
+	// 					"foreground": "#EAC394"
+	// 				}
+	// 			},
+	// 			{
+	// 				"scope": [
+	// 					"keyword",
+	// 					"storage",
+	// 					"constant.length.units.css",
+	// 					"source.inside-js.css.styled",
+	// 					"keyword.other.unit.percentage.css",
+	// 					"keyword.other.unit.px.css",
+	// 					"keyword.other.unit.rem.css",
+	// 					"constant.length.units.css",
+	// 					"constant.percentage.units.css",
+	// 					"constant.time.units.css",
+	// 					"constant.angle.units.css",
+	// 					"constant.numeric.css",
+	// 					"punctuation.definition.keyword",
+	// 					"entity.name.tag"
+	// 				],
+	// 				"settings": {
+	// 					"foreground": "#ff6bcb"
+	// 				}
+	// 			},
+	// 			{
+	// 				"scope": [
+	// 					"variable.parameter",
+	// 					"variable.other.constant",
+	// 					"support.variable",
+	// 					"constant",
+	// 					"support.type.property-name.media.css",
+	// 					"meta.property-values.css",
+	// 					"support.constant"
+	// 				],
+	// 				"settings": {
+	// 					"foreground": "#9a86fd",
+	// 					"fontStyle": ""
+	// 				}
+	// 			},
+	// 			{
+	// 				"scope": ["support.class.component"],
+	// 				"settings": {
+	// 					"fontStyle": ""
+	// 				}
+	// 			},
+	// 			{
+	// 				"scope": ["variable.other.constant.object.js"],
+	// 				"settings": {
+	// 					"foreground": "#bd93f9"
+	// 				}
+	// 			},
+	// 			{
+	// 				"scope": ["entity.name.type.parameter"],
+	// 				"settings": {
+	// 					"foreground": "#ffb86c"
+	// 				}
+	// 			},
+	// 			{
+	// 				"scope": [
+	// 					"support",
+	// 					"entity.name.type",
+	// 					"meta.interface.ts",
+	// 					"entity.other.inherited-class"
+	// 				],
+	// 				"settings": {
+	// 					"foreground": "#2cccff"
+	// 				}
+	// 			},
+	// 			{
+	// 				"scope": [
+	// 					"variable.other.readwrite.js",
+	// 					"entity.name.type.class",
+	// 					"variable.other.property.js",
+	// 					"variable.scss",
+	// 					"storage.modifier.ts",
+	// 					"variable.other.property.static.js"
+	// 				],
+	// 				"settings": {
+	// 					"foreground": "#82AAFF"
+	// 				}
+	// 			}
+	// 		]
+	// 	}
+	// },
+
+	"vscode_custom_css.imports": ["file:///C:/extension/vscode/color.css"],
+	"editor.fontFamily": "Dank Mono, Fira Code, Arial, Helvetica, sans-serif",
 	"editor.fontLigatures": true,
 	"editor.lineHeight": 25,
 	"editor.wordWrap": "on",
@@ -236,7 +237,7 @@
 		"tw\\(.*?\\).*?`([^`]*)" // tw(Component)<xxx>`...`
 	],
 	"tailwindcss.colorDecorators": "off",
-	"editor.fontSize": 15,
+	"editor.fontSize": 16,
 	"files.associations": {
 		"*.css": "tailwindcss"
 	},
@@ -246,7 +247,8 @@
 		"editor.defaultFormatter": "Prisma.prisma"
 	},
 	"editor.formatOnSave": true,
-	"workbench.colorTheme": "Evondev Dracula Normal Contrast"
+	"workbench.colorTheme": "Moonlight II Italic",
+	"prettier.tabWidth": 4
 	// "prettier.requireConfig": true
 	// "[svelte]": {
 	// 	"editor.defaultFormatter": "esbenp.prettier-vscode",

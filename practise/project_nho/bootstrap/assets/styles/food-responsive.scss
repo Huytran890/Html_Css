@@ -1,0 +1,38 @@
+@mixin media-lg {
+  @media only screen and (max-width: 992px) {
+    @content
+  }
+}
+
+@mixin media-md {
+  @media only screen and (max-width: 768px) {
+    @content
+  }
+}
+
+@include media-lg {
+  .card {
+    width: calc((100% / 2) - 30px) !important;
+  }
+
+  html {
+    font-size: 13px;
+  }
+}
+
+@include media-md {
+  .card {
+    width: calc((100% / 1) - 30px) !important;
+    max-width: 400px !important;
+    margin: auto !important;
+    margin-bottom: 20px !important;
+  }
+
+  .card:last-child {
+    margin-bottom: 0;
+  }
+
+  html {
+    font-size: 10px;
+  }
+}
