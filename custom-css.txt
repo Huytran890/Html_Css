@@ -214,6 +214,72 @@ body > div[class*="Dracula-"] :where(.mtk13) {
 		rgb(255, 204, 71) 92.98%
 	) !important;
 	animation: animate 3.5s linear infinite forwards !important;
+<<<<<<< HEAD
+=======
+}
+.tabs-container > .tab {
+	overflow: hidden !important;
+}
+@keyframes animate {
+	from {
+	transform: translateX(-300px) translateZ(0px);
+	}
+	to {
+	transform: translateX(300px) translateZ(0px);
+	}
+}
+
+.monaco-workbench
+.part.editor
+> .content
+.editor-group-container
+> .title
+.tabs-container {
+padding: 8px;
+gap: 6px;
+}
+.monaco-workbench
+.part.editor
+> .content
+.editor-group-container
+> .title
+.tabs-container
+> .tab.sizing-fit {
+	background-color: #21222c !important;
+	border-radius: 4px;
+}
+.tab.tab-actions-right.sizing-fit.has-icon.tab-border-top.active .tab-label {
+	position: relative;
+}
+.tab.tab-actions-right.sizing-fit.has-icon.tab-border-top.active:before {
+	content: "";
+	position: absolute;
+	background: #21222c;
+	top: 50%;
+	left: 50%;
+	width: calc(100% - 2px);
+	height: calc(100% - 2px);
+	border-radius: inherit;
+	transform: translate(-50.1%, -50.1%);
+	border-radius: inherit;
+}
+.monaco-workbench
+	.part.editor
+	> .content
+	.editor-group-container
+	> .title
+	.tabs-container
+	> .tab.sizing-fit.active {
+	background-image: linear-gradient(
+		45deg,
+		#fcb564,
+		#ff65f2,
+		#d66efd,
+		#6a5af9,
+		#2cccff,
+		#20e3b2
+	);
+>>>>>>> d78aa364db0e6b42f1d410ef0f7b2b698db265f7
 }
 .tabs-container > .tab {
 	overflow: hidden !important;
